@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+div.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    width: 100vw;
+    background: #304353;
+}
+
+div.logo {
+    font-size: 1.5rem;
+    color: #bcc3c7;
+}
+
+ul.nav-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 2vw;
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #88949B;
+    padding: 0.5vw;
+}
+
+ul li a:hover {
+    color: #304353;
+    background: #fff;
+    padding: 0.5rem;
+}
+
+div.hero-section {
+    background: #304353;
+    padding: 10rem;
+}
+
+div.hero-content-heading {
+    text-align: center;
+}
+
+div.hero-content-heading h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #bcc3c7;
+}
+
+div.hero-content-heading p {
+    text-align: center;
+    padding-top: 0.7rem;
+    color: #88949B;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+div.hero-content-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+div.hero-content-btn a {
+    background: #E44C65;
+    text-decoration: none;
+    color: #bcc3c7;
+    font-size: 0.9rem;
+    padding: 10px 30px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
+div.hero-background {
+    background: #f0f0f0;
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.background {
+    background: #fff;
+    box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+    padding: 15px 40px;
+    width: 550px;
+    height: 220px;
+    position: relative;
+}
+
+div.background h4 {
+    padding: 2rem;
+    color: #555657;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+div.background p {
+    color: #A6A5AA;
+    padding-left: 2rem;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+div.hero-background-pos {
+    position: absolute;
+    right: 0px;
+    left: 66%;
+    background: #fff;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+}
+
+div.snapshot-team {
+    background: #f0f0f0;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+div.snapshot-team h2 {
+    color: #555657;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+div.snapshot-team p {
+    color: #A6A5AA;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding-top: 0.8rem;
+}
+
+div.snapshot-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 4rem 6rem;
+}
+
+div.snapshot-box-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.box1 {
+    background: #fff;
+    padding: 10px 20px;
+    width: 220px;
+    height: 230px;
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+}
+
+div.box3 {
+    background: #304353;
+    padding: 10px 20px;
+    width: 220px;
+    height: 230px;
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+}
+
+div.box3 h5 {
+    text-align: center;
+    padding-top: 2rem;
+    color: #E44C65;
+    font-size: 1rem;
+}
+
+div.circle {
+    display: flex;
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #bcc3c7;
+    margin-top: 2rem;
+    
+}
+
+div.box1 h5 {
+    text-align: center;
+    padding-top: 2rem;
+    color: #E44C65;
+    font-size: 1rem;
+}
+
+div.gallery-section {
+    background: #fff;
+    padding: 4rem;
+}
+
+div.gallery-content {
+    text-align: center;
+}
+
+div.gallery-content h4 {
+    color: #555657;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+div.gallery-content p {
+    color: #A6A5AA;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding-top: 0.8rem;
+}
+
+div.gallery-img {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding-top: 3rem;
+}
+
+div.img {
+    margin: 10px;
+}
+
+div.img img {
+    width: 250px;
+    height: 180px;
+}
+
+div.footer {
+    background: #304353;
+    padding: 3rem;
+}
+
+div.footer-content {
+    text-align: center;
+}
+
+div.footer-content h4 {
+    color: #bcc3c7;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+div.footer-content p {
+    color: #88949B;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding-top: 0.8rem;
+}
+
+div.footer-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+input[type="text"] {
+    margin-right: 10px;
+    padding: 10px 20px;
+    width: 25%;
+    outline: none;
+    border: 1px solid #bcc3c7;
+    background: transparent;
+    color: #f0f0f0;
+    font-size: 1rem;
+    border-radius: 2px;
+}
+
+input[type="email"] {
+    margin-right: 10px;
+    padding: 10px 20px;
+    width: 25%;
+    outline: none;
+    border: 1px solid #bcc3c7;
+    background: transparent;
+    color: #f0f0f0;
+    font-size: 1rem;
+    border-radius: 2px;
+}
+
+::placeholder {
+    color: #A6A5AA;
+}
+
+div.footer-textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+textarea {
+    width: 51%;
+    height: 150px;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid #bcc3c7;
+    background: transparent;
+    color: #f0f0f0;
+}
+
+div.footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+div.footer-btn a {
+    background: #E44C65;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 0.9rem;
+    padding: 10px 50px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
+div.footer h6 {
+    text-align: center;
+    color: #88949B;
+    font-size: 1rem;
+    padding-top: 6rem;
+}
