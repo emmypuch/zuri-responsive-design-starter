@@ -9,9 +9,10 @@
 
 div.nav-bar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem 6rem;
-    width: 100vw;
+    width: 100%;
     background: #304353;
 }
 
@@ -344,4 +345,84 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px){
+    div.hero-background-pos{
+        display: none;
+    }
+}
+
+@media (max-width: 992px){
+    div.hero-background {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px){
+    div.nav-bar {
+        padding: 1rem 0.5rem;
+    } 
+
+    div.hero-section {
+        padding: 5rem;
+    }
+
+    div.snapshot-box-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    div.background {
+        padding: 15px 25px;
+    }
+
+    div.background p {
+        padding-left: 0;
+    }
+
+    div.footer-input {
+        flex-direction: column;
+    }
+
+    input[type="text"], input[type="email"] {
+        margin-top: 10px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px){
+    div.hero-section {
+        padding: 2rem;
+    }
+
+    div.background h4 {
+        padding: 1rem;
+    }
+
+    div.background p {
+        padding-left: 0;
+        font-size: 0.72rem;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 300px){
+    div.logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+
+    div.hero-section {
+        padding: 1.5rem;
+    }
+
+    div.background h4 {
+        padding: 0.5rem;
+    }
+    div.background p {
+        font-size: 0.5rem;
+    }
 }
