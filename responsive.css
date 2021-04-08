@@ -1,0 +1,356 @@
+@media (max-width: 500px) {
+    div.nav-bar {
+        padding: 1rem 3rem;
+        width: 100%;
+        background: #304353;
+    }
+    div.logo {
+        font-size: 2rem;
+        color: #bcc3c7;
+        margin-left: -7vw;
+    }
+    ul.nav-links {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-left: 13vw;
+        margin-top: 1vh;
+    }
+    ul li {
+        margin: 0 1vw;
+        list-style: none;
+        font-size: 1rem;
+    }
+    ul li a {
+        padding: 0.3vw;
+    }
+    div.hero-section {
+        padding: 5rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    div.hero-content-heading {
+        text-align: center;
+    }
+    div.hero-content-heading h3 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .snapshot {
+        font-size: 3rem;
+        letter-spacing: 10px;
+    }
+    div.hero-content-heading p {
+        text-align: center;
+        padding-top: 0.7rem;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+    div.hero-background {
+        padding: 10rem;
+    }
+    div.background {
+        padding: 1px 40px;
+        width: 500px;
+        height: 350px;
+    }
+    div.background h4 {
+        padding: 1.5rem;
+        padding-left: 0;
+        color: #555657;
+        font-size: 1.5rem;
+    }
+    div.background p {
+        color: #A6A5AA;
+        padding-left: 0;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    div.hero-background-pos {
+        position: absolute;
+        right: 0px;
+        left: 70%;
+        border-radius: 50%;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 30%);
+    }
+    div.snapshot-team {
+        background: #f0f0f0;
+        text-align: center;
+        padding-top: 2rem;
+    }
+    div.snapshot-team h2 {
+        font-size: 2rem;
+    }
+    div.snapshot-team p {
+        font-size: 1rem;
+        letter-spacing: 0;
+        padding-top: 0.8rem;
+        overflow-wrap: break-word;
+        padding-right: 1rem;
+    }
+    div.snapshot-box {
+        display: flex;
+        align-items: center;
+        background: #f0f0f0;
+        padding: 4rem 6rem;
+    }
+    div.snapshot-box-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    div.box1 {
+        padding: 5px 10px;
+        width: 250px;
+        height: 270px;
+        margin: 30px;
+    }
+    div.box3 {
+        padding: 5px 10px;
+        width: 250px;
+        height: 270px;
+        margin: 30px;
+    }
+    div.box3 h5 {
+        text-align: center;
+        padding-top: 2rem;
+        font-size: 1rem;
+    }
+    div.circle {
+        width: 150px;
+        height: 150px;
+        margin-top: 2rem;
+    }
+    div.box1 h5 {
+        text-align: center;
+        padding-top: 1.5rem;
+        font-size: 1.2rem;
+    }
+    div.footer-content p {
+        letter-spacing: 1px;
+    }
+    div.footer-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem;
+        max-width: 400px;
+    }
+    input {
+        margin-bottom: 15px;
+        padding: 10px;
+        padding-left: 3px;
+        padding-right: 30%;
+    }
+    textarea {
+        width: 70%;
+        height: 150px;
+        padding: 0.7rem;
+    }
+}
+
+
+/***************   Min Width = 501px  **********/
+
+
+/***************   Min Width = 501px  **********/
+
+
+/***************   Min Width = 501px  **********/
+
+@media( min-width:501px) {
+    ul.nav-links {
+        margin-top: 1vh;
+    }
+    div.background {
+        padding: 1px 40px;
+        width: 400px;
+        height: 330px;
+    }
+    div.background h4 {
+        padding: 1.5rem;
+        padding-left: 0;
+        color: #555657;
+        font-size: 1.5rem;
+    }
+    div.background p {
+        color: #A6A5AA;
+        padding-left: 0;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    div.hero-background-pos {
+        position: absolute;
+        right: 0px;
+        left: 70%;
+        border-radius: 50%;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 30%);
+    }
+    div.snapshot-team {
+        background: #f0f0f0;
+        text-align: center;
+        padding-top: 2rem;
+    }
+    div.snapshot-team h2 {
+        font-size: 2rem;
+    }
+    div.snapshot-team p {
+        font-size: 1rem;
+        letter-spacing: 0;
+        padding-top: 0.8rem;
+        overflow-wrap: break-word;
+        padding-right: 1rem;
+    }
+    div.snapshot-box {
+        display: flex;
+        align-items: center;
+        padding: 4rem 6rem;
+    }
+    div.snapshot-box-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    div.box1 {
+        padding: 5px 10px;
+        width: 250px;
+        height: 270px;
+        margin: 30px;
+    }
+    div.box3 {
+        padding: 5px 10px;
+        width: 250px;
+        height: 270px;
+        margin: 30px;
+    }
+    div.box3 h5 {
+        text-align: center;
+        padding-top: 2rem;
+        font-size: 1rem;
+    }
+    div.circle {
+        width: 150px;
+        height: 150px;
+        margin-top: 2rem;
+    }
+    div.box1 h5 {
+        text-align: center;
+        padding-top: 1.5rem;
+        font-size: 1.2rem;
+    }
+    div.gallery-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.footer-input {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem;
+    }
+    input {
+        margin-right: 10px;
+        padding: 13px;
+        padding-left: 3px;
+        padding-right: 20%;
+    }
+    textarea {
+        width: 90%;
+        height: 150px;
+        padding: 0.7rem;
+    }
+}
+
+
+/***************  Min Width = 700px  **********/
+
+
+/***************  Min Width = 700px  **********/
+
+
+/***************  Min Width = 700px  **********/
+
+@media ( min-width:700px) {
+    ul.nav-links {
+        margin-top: 1vh;
+    }
+    div.background {
+        padding: 1px 40px;
+        width: 500px;
+        height: 300px;
+    }
+    div.hero-background-pos {
+        position: relative;
+        right: 0px;
+        left: -50px;
+    }
+    div.snapshot-team p {
+        color: #A6A5AA;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        padding-top: 0.8rem;
+    }
+    div.snapshot-box {
+        display: flex;
+        align-items: center;
+        background: #f0f0f0;
+        padding: 4rem 0rem;
+    }
+    div.snapshot-box-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    div.box1 {
+        background: #fff;
+        padding: 10px 10px;
+        width: 200px;
+        height: 230px;
+        margin: 5px 20px;
+        border-radius: 2px;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+    }
+    div.box3 {
+        background: #304353;
+        padding: 10px 10px;
+        width: 200px;
+        height: 230px;
+        margin: 5px 30px;
+        border-radius: 2px;
+        box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+    }
+    div.circle {
+        display: flex;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #bcc3c7;
+        margin-top: 2rem;
+    }
+    div.box1 h5 {
+        text-align: center;
+        padding-top: 2rem;
+        color: #E44C65;
+        font-size: 1rem;
+    }
+    div.gallery-img {
+        flex-direction: row;
+    }
+    div.img {
+        margin: 30px;
+    }
+    div.img img {
+        width: 300px;
+        height: 250px;
+    }
+    textarea {
+        width: 65%;
+    }
+}
