@@ -13,8 +13,56 @@ div.nav-bar {
     padding: 1rem 6rem;
     width: 100vw;
     background: #304353;
+   
+}
+.burger{
+    display: none;
+    cursor: pointer ;
+     
+}
+ 
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+
 }
 
+@media screen and (max-width: 1024px){
+    .nav-links{
+        width: 60%;
+
+    }
+}
+
+@media screen and (max-width: 768px){
+   body{
+       overflow-x: hidden   ;
+   }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color:#304353 ; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        transform: translateX(100%) ;
+
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+} 
+.nav-active{
+    transform: translateX(0%);
+}
 div.logo {
     font-size: 1.5rem;
     color: #bcc3c7;
@@ -105,20 +153,50 @@ div.background {
 }
 
 div.background h4 {
-    padding: 2rem;
+    padding: 1rem;
     color: #555657;
     font-size: 1rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    
 }
 
 div.background p {
     color: #A6A5AA;
     padding-left: 2rem;
+    
     font-size: 0.8rem;
     letter-spacing: 2px;
 }
+@media screen and (max-width:748px){
+    div.background p{
+        display: inline-block;
+        text-align: justify;
+        padding-left: .1rem;
+        letter-spacing: 1px;
+        font-weight:bold ;
+        
+    }
+}
 
+@media screen and (max-width:1024px){
+    div.background p{
+        display: block;
+        
+    }
+}
+@media screen and (max-width:748px){
+    div.background{
+        width: 100vw;
+        height: 50vh;
+    }
+}
+@media screen and (max-width:1024px){
+    div.background{
+        width: fit-content;
+        
+    }
+}
 div.hero-background-pos {
     position: absolute;
     right: 0px;
@@ -128,6 +206,11 @@ div.hero-background-pos {
     height: 140px;
     border-radius: 50%;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+}
+@media screen and (max-width:748px){
+    div.hero-background-pos{
+        display: none;
+    }
 }
 
 div.snapshot-team {
@@ -156,8 +239,14 @@ div.snapshot-box {
     align-items: center;
     background: #f0f0f0;
     padding: 4rem 6rem;
+    
 }
-
+@media screen and (max-width:748px){
+    div.snapshot-box-content{
+        display: flex;
+        flex-direction: column;
+    }
+}
 div.snapshot-box-content {
     display: flex;
     justify-content: space-between;
@@ -345,3 +434,4 @@ div.footer h6 {
     font-size: 1rem;
     padding-top: 6rem;
 }
+
