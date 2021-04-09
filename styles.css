@@ -45,12 +45,20 @@ ul li a:hover {
     padding: 0.5rem;
 }
 
-.nav-bar .hamburger {
+.nav-bar .action-menu {
     position: absolute;
     right: 20px;
+    /* z-index: 4; */
+}
+.nav-bar .hamburger {
+    position: relative;
+    /* z-index: 2; */
 }
 .nav-bar .hamburger2 {
-    position: relative;
+    display: none;
+    top: 10px;
+    position: absolute;
+    /* z-index: 0; */
 }
 .nav-bar .hamburger2 span{
     display: block;
@@ -70,7 +78,7 @@ ul li a:hover {
     transform: rotate(45deg);
     background: #E44C65;
 }
-.nav-bar .hamburger:hover {
+.nav-bar .action-menu:hover {
     cursor: pointer;
 }
 .nav-bar .hamburger span{
