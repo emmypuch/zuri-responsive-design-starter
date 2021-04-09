@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-size: cover;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -13,6 +14,28 @@ div.nav-bar {
     padding: 1rem 6rem;
     width: 100vw;
     background: #304353;
+    
+}
+
+div.nav-bar .nav-btn div{
+    width: 40px;
+    height: 3px;
+    background-color: #dbd9d9;
+    display: flex;
+    border-radius: 55px;    
+    margin-bottom: none;
+    visibility: hidden;
+}
+div.nav-btn div.a1{
+    margin-top: 8px;
+}
+div.nav-btn div.a2{
+    margin-top: 3px;
+
+}
+
+div.nav-btn div.a3{
+    margin-top: 3px;
 }
 
 div.logo {
@@ -98,9 +121,9 @@ div.hero-background {
 div.background {
     background: #fff;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
-    padding: 15px 40px;
-    width: 550px;
-    height: 220px;
+    padding: 15px 27px;
+    width: 60%;
+    height: 18em;
     position: relative;
 }
 
@@ -117,12 +140,14 @@ div.background p {
     padding-left: 2rem;
     font-size: 0.8rem;
     letter-spacing: 2px;
+    text-align: left;
+    
 }
 
 div.hero-background-pos {
     position: absolute;
     right: 0px;
-    left: 66%;
+    left: 68%;
     background: #fff;
     width: 140px;
     height: 140px;
@@ -160,7 +185,8 @@ div.snapshot-box {
 
 div.snapshot-box-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 div.box1 {
@@ -215,6 +241,10 @@ div.gallery-section {
 
 div.gallery-content {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
 }
 
 div.gallery-content h4 {
@@ -227,8 +257,11 @@ div.gallery-content h4 {
 div.gallery-content p {
     color: #A6A5AA;
     font-size: 1rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding-top: 0.8rem;
+   
+    width: 100%;
+    
 }
 
 div.gallery-img {
@@ -236,6 +269,8 @@ div.gallery-img {
    flex-wrap: wrap;
    justify-content: center;
    padding-top: 3rem;
+   
+   
 }
 
 div.img {
@@ -275,6 +310,7 @@ div.footer-input {
     justify-content: center;
     align-items: center;
     padding-top: 3rem;
+    width: 100%;
 }
 
 input[type="text"] {
@@ -344,4 +380,47 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+
+@media screen and (max-width: 875px ){
+    div.hero-background-pos{
+        height: 130px;
+        width: 130px;
+        left: 65%;
+        
+    }
+}
+
+@media screen and (max-width: 820px ) {
+
+    div.hero-background-pos{
+        right: 0px;
+        left: 64%;
+        height: 110px;
+        width: 110px;
+    }
+
+    div.background {
+        height: 22em;
+    }
+}
+
+@media screen and (max-width: 720px ){
+    div.background{
+        width: 90%;
+    }
+    div.hero-background-pos{
+        left: 70%;
+    }
+}
+
+@media screen and (max-width: 650px ){
+    ul.nav-links{
+        display: none;
+        
+    }
+    div.nav-bar .nav-btn div{
+        visibility: visible;
+    }
 }
