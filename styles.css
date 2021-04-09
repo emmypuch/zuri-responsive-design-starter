@@ -49,6 +49,27 @@ ul li a:hover {
     position: absolute;
     right: 20px;
 }
+.nav-bar .hamburger2 {
+    position: relative;
+}
+.nav-bar .hamburger2 span{
+    display: block;
+    background: #fff;
+    width: 40px;
+    height: 10px;
+    margin: 2px;
+}
+.nav-bar .hamburger2 span#one {
+    position: absolute;
+    transform: rotate(-45deg);
+    background: #E44C65;
+}
+.nav-bar .hamburger2 span#three {
+    top: 0;
+    position: absolute;
+    transform: rotate(45deg);
+    background: #E44C65;
+}
 .nav-bar .hamburger:hover {
     cursor: pointer;
 }
