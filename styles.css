@@ -10,9 +10,9 @@
 
 div.nav-bar {
     display: flex;
-    justify-content: space-between;
-    padding: 1rem 6rem;
-    width: 100vw;
+    justify-content: space-evenly;
+    padding: 1rem 0rem;
+    /* width: 100vw; */
     background: #304353;
     
 }
@@ -22,20 +22,25 @@ div.nav-bar .nav-btn div{
     height: 3px;
     background-color: #dbd9d9;
     display: flex;
+    
     border-radius: 55px;    
     margin-bottom: none;
     visibility: hidden;
+    margin-left: 0px;
+    
 }
 div.nav-btn div.a1{
     margin-top: 8px;
+    margin-right: 0px;
 }
 div.nav-btn div.a2{
     margin-top: 3px;
-
+    margin-right: 0px;
 }
 
 div.nav-btn div.a3{
     margin-top: 3px;
+    margin-right: 0px;
 }
 
 div.logo {
@@ -70,10 +75,14 @@ ul li a:hover {
 div.hero-section {
     background: #304353;
     padding: 10rem;
+   
 }
 
 div.hero-content-heading {
+  
+    width: fit-content;
     text-align: center;
+    
 }
 
 div.hero-content-heading h3 {
@@ -95,6 +104,7 @@ div.hero-content-heading p {
 
 div.hero-content-btn {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
@@ -138,7 +148,7 @@ div.background h4 {
 div.background p {
     color: #A6A5AA;
     padding-left: 2rem;
-    font-size: 0.8rem;
+    font-size: 13px;
     letter-spacing: 2px;
     text-align: left;
     
@@ -310,11 +320,14 @@ div.footer-input {
     justify-content: center;
     align-items: center;
     padding-top: 3rem;
-    width: 100%;
+    /* width: 100%; */
+    
 }
 
+
+
 input[type="text"] {
-    margin-right: 10px;
+    margin-right: 5px;
     padding: 10px 20px;
     width: 25%;
     outline: none;
@@ -326,7 +339,7 @@ input[type="text"] {
 }
 
 input[type="email"] {
-    margin-right: 10px;
+    margin-right: 0px;
     padding: 10px 20px;
     width: 25%;
     outline: none;
@@ -424,3 +437,98 @@ div.footer h6 {
         visibility: visible;
     }
 }
+
+
+@media screen and (max-width: 590px ){
+    div.background{
+        width: 180%;
+        height: 25em;
+    }
+    div.hero-background-pos{
+        left: 68%;
+        width: 95px;
+        height: 95px;
+    }
+    div.hero-content-heading h3{
+        letter-spacing: 1px;
+        
+    }
+    div.hero-content-heading p{
+        text-align: center;
+        
+        padding: 40px 0px 0px 0px;
+        margin-left: 0px;
+        
+    }
+  
+    div.hero-section{
+        padding: 6rem;
+    }
+   
+    div.footer-input{
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 0px;
+        width: 100%;
+        
+    }
+    input[type="text"]{
+        margin-right: 0;
+        width: 80%;
+    }
+    input[type="email"]{
+        width: 80%;
+    }
+     textarea{
+         width: 80%;
+     }
+}
+
+@media screen and (max-width: 450px ){
+    div.background{
+        width: fit-content;
+        height: 26em;
+    }
+    div.background h4{
+        padding: .5rem 0px 1.5rem 0px;
+    }
+    div.background p{
+       
+        padding: 0px;
+    }
+    div.hero-section{
+        padding: 3rem;
+    }
+
+    div.footer{
+        padding: 2rem;
+    }
+  
+    input[type="text"]{
+       margin-right: 0;
+        width: 80%;
+    }
+    input[type="email"]{
+        width: 80%;
+    }
+     textarea{
+         width: 80%;
+     }
+  
+}
+
+ @media screen and ( max-width: 390px){
+     div.background{
+         width: fit-content;
+     }
+
+     input[type="text"]{
+        width: 100%;
+    }
+    input[type="email"]{
+        width: 100%;
+    }
+     textarea{
+         width: 100%;
+     }
+ } 
