@@ -11,8 +11,9 @@ div.nav-bar {
     display: flex;
     justify-content: space-between;
     padding: 1rem 6rem;
-    width: 100vw;
+    width: auto;
     background: #304353;
+    position: relative;
 }
 
 div.logo {
@@ -42,6 +43,21 @@ ul li a:hover {
     color: #304353;
     background: #fff;
     padding: 0.5rem;
+}
+
+.nav-bar .hamburger {
+    position: absolute;
+    right: 20px;
+}
+.nav-bar .hamburger:hover {
+    cursor: pointer;
+}
+.nav-bar .hamburger span{
+    display: block;
+    background: #fff;
+    width: 40px;
+    height: 10px;
+    margin: 2px;
 }
 
 div.hero-section {
@@ -100,7 +116,7 @@ div.background {
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
     padding: 15px 40px;
     width: 550px;
-    height: 220px;
+    height: auto;
     position: relative;
 }
 
@@ -156,6 +172,7 @@ div.snapshot-box {
     align-items: center;
     background: #f0f0f0;
     padding: 4rem 6rem;
+    position: relative;
 }
 
 div.snapshot-box-content {
@@ -344,4 +361,55 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+@media screen and (max-width: 735px){
+    div.snapshot-box-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    div.snapshot-box-content .box1 {
+        grid-column: span 2;
+        grid-row: 1;
+        position: relative;
+        /* left: -20px; */
+        /* margin-right: auto; */
+    }
+    div.snapshot-box-content .box3 {
+        grid-column: 2/4;
+        grid-row: 2;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .nav-bar {
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+    .logo {
+        width: 100%;
+        /* padding: 10px; */
+        /* align-self: center; */
+        text-align: left;
+    }
+    .nav-bar .nav-links {
+        position: absolute;
+        border: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        left: 45%;
+        top: 85%;
+        /* width: 100%; */
+    }
+    .nav-bar .nav-links * {
+        padding: 10px;
+    }
+
+    div.snapshot-box-content {
+        display: flex;
+        flex-direction: column;
+   }
 }
