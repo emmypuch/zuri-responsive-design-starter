@@ -48,7 +48,7 @@ ul li a:hover {
 .nav-bar .action-menu {
     position: absolute;
     right: 20px;
-    /* z-index: 4; */
+    display: none;
 }
 .nav-bar .hamburger {
     position: relative;
@@ -440,10 +440,16 @@ div.footer h6 {
         text-align: center;
         left: 45%;
         top: 85%;
-        /* width: 100%; */
+        display: none;
+        animation-name: fade;
+        animation-duration: 1.2s;
     }
     .nav-bar .nav-links * {
         padding: 10px;
+    }
+
+    .nav-bar .action-menu {
+        display: block;
     }
 
     div.snapshot-box-content {
