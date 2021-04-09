@@ -52,13 +52,22 @@ ul li a:hover {
 }
 .nav-bar .hamburger {
     position: relative;
+    animation-name: fade;
+    animation-duration: 1.25s;
     /* z-index: 2; */
 }
 .nav-bar .hamburger2 {
     display: none;
     top: 10px;
-    position: absolute;
+    left: -45px;
+    position: relative;
+    animation-name: fade;
+    animation-duration: 1.25s;
     /* z-index: 0; */
+}
+@keyframes fade {
+    from { opacity: 0;  }
+    to { opacity: 1;  }
 }
 .nav-bar .hamburger2 span{
     display: block;
