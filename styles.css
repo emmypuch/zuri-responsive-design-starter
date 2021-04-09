@@ -410,8 +410,12 @@ div.footer h6 {
         grid-column: span 2;
         grid-row: 1;
         position: relative;
-        /* left: -20px; */
+        
+        left: -20px;
         /* margin-right: auto; */
+    }
+    div.snapshot-box-content .box1:nth-child(2){
+        margin-left: 60px;
     }
     div.snapshot-box-content .box3 {
         grid-column: 2/4;
@@ -420,25 +424,20 @@ div.footer h6 {
 }
 
 @media screen and (max-width: 570px){
-    .nav-bar {
-        /* display: flex; */
-        /* flex-direction: column; */
-    }
+
     .logo {
         width: 100%;
-        /* padding: 10px; */
-        /* align-self: center; */
         text-align: left;
     }
     .nav-bar .nav-links {
         position: absolute;
-        border: 1px solid #fff;
         display: flex;
+        border-bottom: 2px solid snow;
         flex-direction: column;
         align-content: center;
         justify-content: center;
         text-align: center;
-        left: 45%;
+        left: 40%;
         top: 85%;
         display: none;
         animation-name: fade;
@@ -456,4 +455,12 @@ div.footer h6 {
         display: flex;
         flex-direction: column;
    }
+   div.snapshot-box-content .box1:nth-child(2){
+    margin-left: auto;
+}
+div.snapshot-box-content .box3{
+    margin-left: auto;
+    position: relative;
+    left: -20px;
+}
 }
