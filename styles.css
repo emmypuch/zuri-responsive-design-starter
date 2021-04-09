@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +6,15 @@
     font-family: 'Rubik', sans-serif;
 }
 
+.container {
+    width: 100%;
+}
+
 div.nav-bar {
     display: flex;
     justify-content: space-between;
     padding: 1rem 6rem;
-    width: 100vw;
+    width: 100%;
     background: #304353;
 }
 
@@ -22,8 +25,10 @@ div.logo {
 
 ul.nav-links {
     display: flex;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 ul li {
@@ -45,6 +50,7 @@ ul li a:hover {
 }
 
 div.hero-section {
+    width: 100%;
     background: #304353;
     padding: 10rem;
 }
@@ -93,14 +99,14 @@ div.hero-background {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 div.background {
     background: #fff;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
-    padding: 15px 40px;
+    padding: 20px 40px;
     width: 550px;
-    height: 220px;
     position: relative;
 }
 
@@ -198,7 +204,6 @@ div.circle {
     border-radius: 50%;
     background: #bcc3c7;
     margin-top: 2rem;
-    
 }
 
 div.box1 h5 {
@@ -232,10 +237,10 @@ div.gallery-content p {
 }
 
 div.gallery-img {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3rem;
 }
 
 div.img {
@@ -248,6 +253,7 @@ div.img img {
 }
 
 div.footer {
+    width: 100%;
     background: #304353;
     padding: 3rem;
 }
@@ -344,4 +350,20 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+@media screen and (max-width:768px) {
+    div.snapshot-box-content {
+        flex-direction: column;
+    }
+    ul.nav-links {
+        flex-direction: column;
+    }
+    div.hero-section {
+        padding: 5rem;
+    }
+    div.hero-background-pos {
+        right: 0px;
+        left: 60%;
+    }
 }
