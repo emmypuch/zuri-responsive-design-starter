@@ -724,6 +724,7 @@ div.footer h6 {
     .hamburger_menu {
         display: block !important;
     }
+    
 
     div.hero-section {
         text-align: center;
@@ -872,7 +873,7 @@ div.footer h6 {
 
     div.hero-section {
         text-align: center;
-        padding: 11.5em 0 7.8em 0;
+        padding: 8.5em 0 7.8em 0;
     }
     
     div.hero-content-heading h3 {
@@ -904,6 +905,7 @@ div.footer h6 {
 
     div.background {
         height: auto;
+        text-align: center;
         max-height: 100%;
         padding: 2em 1em;
     }
@@ -1002,6 +1004,10 @@ div.footer h6 {
 
     div.footer h6 {
         font-size: .82rem;
+    }
+
+    div.footer-btn a {
+        padding: 10px 35px;
     }
 }
 
