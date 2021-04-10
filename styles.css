@@ -22,7 +22,7 @@ div.logo {
 
 ul.nav-links {
     display: flex;
-    margin: 0;
+    margin: 2rem;
     padding: 0;
 }
 
@@ -42,6 +42,51 @@ ul li a:hover {
     color: #304353;
     background: #fff;
     padding: 0.5rem;
+}
+
+.hamburger {
+	background-color: transparent;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	margin-right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+	div.nav-bar {
+		display: flex;
+		justify-content: space-between;
+		padding: 1rem;
+		width: 100vw;
+	}
+	
+	div.logo {
+		font-size: 1.3rem;
+	}
+	
+	ul.nav-links {
+		display: none;
+	}
+	
+	ul.nav-links.toggleCls {
+		display: block;
+	}
+	
+	ul li {
+		margin: 0;
+		font-size: 1rem;
+	}
+	
+	ul li a {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.hamburger {
+		display: none;
+	}
+	
 }
 
 div.hero-section {
@@ -87,6 +132,22 @@ div.hero-content-btn a {
     letter-spacing: 2px;
 }
 
+@media screen and (max-width: 768px) {
+	div.hero-section {
+		padding: 5rem 2rem;
+	}
+	
+	div.hero-content-heading h3 {
+		text-align: center;
+		font-size: 1.6rem;
+		text-transform: none;
+	}
+	
+	div.hero-content-heading p {
+		font-size: 0.6rem;
+	}
+}
+
 div.hero-background {
     background: #f0f0f0;
     padding: 10rem;
@@ -128,6 +189,32 @@ div.hero-background-pos {
     height: 140px;
     border-radius: 50%;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+}
+
+@media screen and (max-width: 768px) {
+	div.hero-background {
+		padding: 3rem;
+	}
+	
+	div.background {
+		padding: 10px 30px;
+		width: 300px;
+		height: 256px;
+	}
+	
+	div.background h4 {
+		padding: 1rem;
+		font-size: 1rem;
+	}
+	
+	div.background p {
+		padding-left: 1rem;
+		font-size: 0.7rem;
+	}
+	
+	div.hero-background-pos {
+		display: none;
+	}
 }
 
 div.snapshot-team {
@@ -208,6 +295,41 @@ div.box1 h5 {
     font-size: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+	div.snapshot-team {
+		padding: 2rem;
+		background: #f0f0f0;
+		text-align: center;
+	}
+	
+	div.snapshot-team h2 {
+		font-size: 1.2rem;
+	}
+	
+	div.snapshot-team p {
+		font-size: 0.8rem;
+	}
+	
+	div.snapshot-box {
+		padding: 2rem 0rem;
+	}
+	
+	div.snapshot-box-content {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	div.box1 {
+		width: 300px;
+		height: 230px;
+	}
+	
+	div.box3 {
+		width: 300px;
+		height: 230px;
+	}
+}
+
 div.gallery-section {
     background: #fff;
     padding: 4rem;
@@ -245,6 +367,25 @@ div.img {
 div.img img {
     width: 250px;
     height: 180px;
+}
+
+@media screen and (max-width: 768px) {
+	div.gallery-section {
+		padding: 2rem;
+	}
+	
+	div.img img {
+		width: 300px;
+		height: 180px;
+	}
+	
+	div.gallery-content h4 {
+		font-size: 1.2rem;
+	}
+	
+	div.gallery-content p {
+		font-size: 0.8rem;
+	}
 }
 
 div.footer {
