@@ -986,7 +986,7 @@ div.footer h6 {
     input[type="text"],
     input[type="email"] {
         margin: 0;
-        width: 75%;
+        width: 85%;
         margin: 0 auto;
     }
 
@@ -997,7 +997,7 @@ div.footer h6 {
     div.footer-textarea textarea {
         resize: none;
         padding-left: 18px;
-        width: 75% !important;
+        width: 85% !important;
     }
 
     div.footer h6 {
