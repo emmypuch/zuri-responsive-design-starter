@@ -7,23 +7,29 @@
     font-family: 'Rubik', sans-serif;
 }
 
+.container {
+  width: 100%;
+}
+
 div.nav-bar {
     display: flex;
     justify-content: space-between;
     padding: 1rem 6rem;
-    width: 100vw;
-    background: #304353;
+    width: 100%; /* changed from 100vw to 100% */
+    background: #2862F5;
 }
 
 div.logo {
     font-size: 1.5rem;
-    color: #bcc3c7;
+    color: #FFFFFF;
 }
 
 ul.nav-links {
     display: flex;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 ul li {
@@ -34,7 +40,7 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: #88949B;
+    color: #FFFFFF;
     padding: 0.5vw;
 }
 
@@ -45,7 +51,8 @@ ul li a:hover {
 }
 
 div.hero-section {
-    background: #304353;
+    width: 100%;
+    background: #2862F5;
     padding: 10rem;
 }
 
@@ -58,13 +65,13 @@ div.hero-content-heading h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
-    color: #bcc3c7;
+    color: #FFFFFF;
 }
 
 div.hero-content-heading p {
     text-align: center;
     padding-top: 0.7rem;
-    color: #88949B;
+    color: #FFFFFF;
     font-size: 1rem;
     letter-spacing: 2px;
     font-weight: 300;
@@ -80,7 +87,7 @@ div.hero-content-btn {
 div.hero-content-btn a {
     background: #E44C65;
     text-decoration: none;
-    color: #bcc3c7;
+    color: #FFFFFF;
     font-size: 0.9rem;
     padding: 10px 30px;
     border-radius: 3px;
@@ -88,6 +95,7 @@ div.hero-content-btn a {
 }
 
 div.hero-background {
+    width: 100%;
     background: #f0f0f0;
     padding: 10rem;
     display: flex;
@@ -98,22 +106,21 @@ div.hero-background {
 div.background {
     background: #fff;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
-    padding: 15px 40px;
+    padding: 20px 40px; /* changed from 15px to 20px */
     width: 550px;
-    height: 220px;
     position: relative;
 }
 
 div.background h4 {
     padding: 2rem;
-    color: #555657;
+    color: #2862F5;
     font-size: 1rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 div.background p {
-    color: #A6A5AA;
+    color: black;
     padding-left: 2rem;
     font-size: 0.8rem;
     letter-spacing: 2px;
@@ -137,14 +144,14 @@ div.snapshot-team {
 }
 
 div.snapshot-team h2 {
-    color: #555657;
+    color: black;
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 div.snapshot-team p {
-    color: #A6A5AA;
+    color: #black;
     font-size: 1rem;
     letter-spacing: 2px;
     padding-top: 0.8rem;
@@ -164,7 +171,7 @@ div.snapshot-box-content {
 }
 
 div.box1 {
-    background: #fff;
+    background: #2862F5;
     padding: 10px 20px;
     width: 220px;
     height: 230px;
@@ -174,7 +181,7 @@ div.box1 {
 }
 
 div.box3 {
-    background: #304353;
+    background: #2862F5;
     padding: 10px 20px;
     width: 220px;
     height: 230px;
@@ -186,7 +193,7 @@ div.box3 {
 div.box3 h5 {
     text-align: center;
     padding-top: 2rem;
-    color: #E44C65;
+    color: #FFFFFF;
     font-size: 1rem;
 }
 
@@ -196,15 +203,14 @@ div.circle {
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background: #bcc3c7;
+    background: #f0f0f0;
     margin-top: 2rem;
-    
 }
 
 div.box1 h5 {
     text-align: center;
     padding-top: 2rem;
-    color: #E44C65;
+    color: #FFFFFF;
     font-size: 1rem;
 }
 
@@ -218,14 +224,14 @@ div.gallery-content {
 }
 
 div.gallery-content h4 {
-    color: #555657;
+    color: black;
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 div.gallery-content p {
-    color: #A6A5AA;
+    color: black;
     font-size: 1rem;
     letter-spacing: 2px;
     padding-top: 0.8rem;
@@ -248,7 +254,8 @@ div.img img {
 }
 
 div.footer {
-    background: #304353;
+    width: 100%; /* added width */
+    background: #2862F5;
     padding: 3rem;
 }
 
@@ -257,14 +264,14 @@ div.footer-content {
 }
 
 div.footer-content h4 {
-    color: #bcc3c7;
+    color: #FFFFFF;
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 div.footer-content p {
-    color: #88949B;
+    color: #FFFFFF;
     font-size: 1rem;
     letter-spacing: 2px;
     padding-top: 0.8rem;
@@ -284,7 +291,7 @@ input[type="text"] {
     outline: none;
     border: 1px solid #bcc3c7;
     background: transparent;
-    color: #f0f0f0;
+    color: #FFFFFF;
     font-size: 1rem;
     border-radius: 2px;
 }
@@ -302,7 +309,7 @@ input[type="email"] {
 }
 
 ::placeholder {
-    color: #A6A5AA;
+    color: #FFFFFF;
 }
 
 div.footer-textarea {
@@ -319,7 +326,7 @@ textarea {
     outline: none;
     border: 1px solid #bcc3c7;
     background: transparent;
-    color: #f0f0f0;
+    color: #FFFFFF;
 }
 
 div.footer-btn {
@@ -332,7 +339,7 @@ div.footer-btn {
 div.footer-btn a {
     background: #E44C65;
     text-decoration: none;
-    color: #f0f0f0;
+    color: #FFFFFF;
     font-size: 0.9rem;
     padding: 10px 50px;
     border-radius: 3px;
@@ -341,7 +348,22 @@ div.footer-btn a {
 
 div.footer h6 {
     text-align: center;
-    color: #88949B;
+    color: #FFFFFF;
     font-size: 1rem;
     padding-top: 6rem;
 }
+
+@media screen and (max-width:768px) {
+  div.snapshot-box-content {
+      flex-direction: column;
+  }
+  ul.nav-links {
+      flex-direction: column;
+  }
+  div.hero-section {
+      padding: 5rem;
+  }
+  div.hero-background-pos {
+      right: 0px;
+      left: 60%;
+  }
