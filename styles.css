@@ -14,6 +14,7 @@ div.nav-bar {
     width: auto;
     background: #304353;
     position: relative;
+    
 }
 
 div.logo {
@@ -25,6 +26,7 @@ ul.nav-links {
     display: flex;
     margin: 0;
     padding: 0;
+    z-index: 23;
 }
 
 ul li {
@@ -101,6 +103,7 @@ ul li a:hover {
 div.hero-section {
     background: #304353;
     padding: 10rem;
+    /* z-index: -2; */
 }
 
 div.hero-content-heading {
@@ -445,6 +448,7 @@ div.footer h6 {
     }
     .nav-bar .nav-links * {
         padding: 10px;
+        
     }
 
     .nav-bar .action-menu {
@@ -468,6 +472,7 @@ div.snapshot-box-content .box3{
 @media screen and (min-width: 360px){
     div.hero-section {
         padding: 2em;
+        padding-top: 10em;
     }
  
 }
