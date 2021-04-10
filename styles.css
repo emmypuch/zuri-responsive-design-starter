@@ -494,7 +494,7 @@ div.footer h6 {
     }
 
     div.hero-section {
-        padding: 9rem 1rem;
+        padding: 11.5em 1em 7.8em 1em;
     }
     
     div.hero-content-heading h3 {
@@ -504,7 +504,7 @@ div.footer h6 {
     div.hero-content-heading p {
         width: 90%;
         padding: .7rem 2em 0 2em;
-        line-height: 2;
+        line-height: 2.5;
     }
     
     div.hero-content-btn a {
@@ -582,7 +582,7 @@ div.footer h6 {
     }
 
     div.hero-section {
-        padding: 9rem 1rem;
+        padding: 11.5em 0 7.8em 0;
     }
     
     div.hero-content-heading h3 {
@@ -593,7 +593,7 @@ div.footer h6 {
         width: 100%;
         font-size: 1.02rem;
         padding: .7rem 2em 0 2em;
-        line-height: 2;
+        line-height: 2.5;
     }
     
     div.hero-content-btn a {
@@ -691,7 +691,7 @@ div.footer h6 {
     input[type="text"],
     input[type="email"] {
         margin: 0;
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
     }
 
@@ -702,7 +702,7 @@ div.footer h6 {
     div.footer-textarea textarea {
         resize: none;
         padding-left: 18px;
-        width: 60% !important;
+        width: 70% !important;
     }
 
     div.footer h6 {
@@ -727,7 +727,7 @@ div.footer h6 {
 
     div.hero-section {
         text-align: center;
-        padding: 7.8em 2em;
+        padding: 11.5em 1em 7.8em 1em;
     }
     
     div.hero-content-heading h3 {
@@ -738,7 +738,7 @@ div.footer h6 {
         width: 100%;
         font-size: 1rem;
         padding: .7rem 2em 0 2em;
-        line-height: 2;
+        line-height: 2.5;
     }
     
     div.hero-content-btn a {
@@ -836,7 +836,7 @@ div.footer h6 {
     input[type="text"],
     input[type="email"] {
         margin: 0;
-        width: 75%;
+        width: 85%;
         margin: 0 auto;
     }
 
@@ -847,7 +847,7 @@ div.footer h6 {
     div.footer-textarea textarea {
         resize: none;
         padding-left: 18px;
-        width: 75% !important;
+        width: 85% !important;
     }
 
     div.footer h6 {
@@ -1022,7 +1022,7 @@ div.footer h6 {
 
     div.hero-section {
         text-align: center;
-        padding: 7.8em 0;
+        padding: 11.5em 0 7.8em 0;
     }
     
     div.hero-content-heading h3 {
@@ -1033,7 +1033,7 @@ div.footer h6 {
         width: 100%;
         font-size: .93rem;
         padding: .7rem 1.3em 0 1.3em;
-        line-height: 2;
+        line-height: 2.5;
     }
     
     div.hero-content-btn a {
@@ -1134,7 +1134,7 @@ div.footer h6 {
     input[type="email"] {
         font-size: .8rem;
         margin: 0;
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
     }
 
@@ -1146,7 +1146,7 @@ div.footer h6 {
         resize: none;
         padding-left: 18px;
         font-size: .8rem;
-        width: 80% !important;
+        width: 85% !important;
     }
 
     div.footer h6 {
