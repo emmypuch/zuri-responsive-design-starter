@@ -63,12 +63,16 @@ ul li a:hover {
     border-radius: 50%;
 }
 
+
+
 div.hero-section {
+    height: 91vh;
     background: #304353;
-    padding: 10rem;
+    padding: 10rem 4rem;
 }
 
 div.hero-content-heading {
+    line-height: 1.9;
     text-align: center;
 }
 
@@ -81,10 +85,12 @@ div.hero-content-heading h3 {
 }
 
 div.hero-content-heading p {
+    width: 95%;
+    margin: 0 auto;
     text-align: center;
-    padding-top: 0.7rem;
+    padding: .7rem 5em 0 5em;
     color: #88949B;
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: 2px;
     font-weight: 300;
 }
@@ -100,7 +106,7 @@ div.hero-content-btn a {
     background: #E44C65;
     text-decoration: none;
     color: #bcc3c7;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     padding: 10px 30px;
     border-radius: 3px;
     letter-spacing: 2px;
@@ -402,6 +408,24 @@ div.footer h6 {
         display: block;
     }
 
+    div.hero-section {
+        padding: 9rem 4rem;
+    }
+    
+    div.hero-content-heading h3 {
+        font-size: 1.9rem;
+    }
+    
+    div.hero-content-heading p {
+        width: 90%;
+        padding: .7rem 2em 0 2em;
+        line-height: 2;
+    }
+    
+    div.hero-content-btn a {
+        font-size: 1rem;
+    }
+
     div.hero-background-pos {
         display: none;
     }
@@ -469,6 +493,24 @@ div.footer h6 {
         display: block;
     }
 
+    div.hero-section {
+        padding: 9rem 1rem;
+    }
+    
+    div.hero-content-heading h3 {
+        font-size: 1.9rem;
+    }
+    
+    div.hero-content-heading p {
+        width: 90%;
+        padding: .7rem 2em 0 2em;
+        line-height: 2;
+    }
+    
+    div.hero-content-btn a {
+        font-size: 1rem;
+    }
+
     div.hero-background-pos {
         display: none;
     }
@@ -523,6 +565,8 @@ div.footer h6 {
 
 
 
+
+
 /* SMALL SCREEN SIZES */
 @media (min-width: 540px) and (max-width: 743px) {
     div.nav-bar {
@@ -538,22 +582,22 @@ div.footer h6 {
     }
 
     div.hero-section {
-        padding: 7.8em 3.7em;
+        padding: 9rem 1rem;
     }
     
     div.hero-content-heading h3 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     
     div.hero-content-heading p {
-        font-size: .95rem;
-        letter-spacing: 2px;
-        line-height: 2;
         width: 100%;
+        font-size: 1.02rem;
+        padding: .7rem 2em 0 2em;
+        line-height: 2;
     }
-
-    .hero-content-btn {
-        height: 40px;
+    
+    div.hero-content-btn a {
+        font-size: 1rem;
     }
 
     div.hero-background-pos {
@@ -584,7 +628,7 @@ div.footer h6 {
     div.snapshot-team p,
     div.gallery-content p,
     div.footer-content p {
-        font-size: 1rem;
+        font-size: 1.02rem;
         word-wrap: break-word;
         letter-spacing: 1px;
         padding: 0.8rem 2em 0 2em;
@@ -682,22 +726,23 @@ div.footer h6 {
     }
 
     div.hero-section {
+        text-align: center;
         padding: 7.8em 2em;
     }
     
     div.hero-content-heading h3 {
-        font-size: 1.5rem;
+        font-size: 1.55rem;
     }
     
     div.hero-content-heading p {
-        font-size: .95rem;
-        letter-spacing: 2px;
-        line-height: 2;
         width: 100%;
+        font-size: 1rem;
+        padding: .7rem 2em 0 2em;
+        line-height: 2;
     }
-
-    .hero-content-btn {
-        height: 40px;
+    
+    div.hero-content-btn a {
+        font-size: 1rem;
     }
 
     div.hero-background-pos {
@@ -728,7 +773,7 @@ div.footer h6 {
     div.snapshot-team p,
     div.gallery-content p,
     div.footer-content p {
-        font-size: 1rem;
+        font-size: 1.1rem;
         word-wrap: break-word;
         letter-spacing: 1px;
         padding: 0.8rem 2em 0 2em;
@@ -826,19 +871,23 @@ div.footer h6 {
     }
 
     div.hero-section {
-        padding: 7.8em 2em;
+        text-align: center;
+        padding: 7.8em 1em;
     }
     
     div.hero-content-heading h3 {
-        font-size: 1.4rem;
-        margin-bottom: .5em;
+        font-size: 1.45rem;
     }
     
     div.hero-content-heading p {
-        font-size: .88rem;
-        letter-spacing: 2px;
-        line-height: 2;
         width: 100%;
+        font-size: 1rem;
+        padding: .7rem 2em 0 2em;
+        line-height: 2;
+    }
+    
+    div.hero-content-btn a {
+        font-size: 1rem;
     }
 
     .hero-content-btn {
@@ -873,7 +922,7 @@ div.footer h6 {
     div.snapshot-team p,
     div.gallery-content p,
     div.footer-content p {
-        font-size: .89rem;
+        font-size: 1rem;
         width: 100%;
         word-wrap: break-word;
         letter-spacing: 1px;
@@ -972,23 +1021,23 @@ div.footer h6 {
     }
 
     div.hero-section {
-        padding: 7.8em 1em;
+        text-align: center;
+        padding: 7.8em 0;
     }
     
     div.hero-content-heading h3 {
-        font-size: 1.2rem;
-        margin-bottom: .5em;
+        font-size: 1.3rem;
     }
     
     div.hero-content-heading p {
-        font-size: .8rem;
-        letter-spacing: 1px;
-        line-height: 2.5;
         width: 100%;
+        font-size: .93rem;
+        padding: .7rem 1.3em 0 1.3em;
+        line-height: 2;
     }
-
-    .hero-content-btn {
-        height: 40px;
+    
+    div.hero-content-btn a {
+        font-size: .9rem;
     }
 
     div.hero-background-pos {
@@ -1020,7 +1069,7 @@ div.footer h6 {
     div.snapshot-team p,
     div.gallery-content p,
     div.footer-content p {
-        font-size: .8rem;
+        font-size: .93rem;
         width: 100%;
         word-wrap: break-word;
         letter-spacing: 1px;
