@@ -11,8 +11,10 @@ div.nav-bar {
     display: flex;
     justify-content: space-between;
     padding: 1rem 6rem;
-    width: 100vw;
+    width: auto;
     background: #304353;
+    position: relative;
+    
 }
 
 div.logo {
@@ -24,6 +26,7 @@ ul.nav-links {
     display: flex;
     margin: 0;
     padding: 0;
+    z-index: 23;
 }
 
 ul li {
@@ -44,9 +47,63 @@ ul li a:hover {
     padding: 0.5rem;
 }
 
+.nav-bar .action-menu {
+    position: absolute;
+    right: 20px;
+    display: none;
+}
+.nav-bar .hamburger {
+    position: relative;
+    animation-name: fade;
+    animation-duration: 1.25s;
+    /* z-index: 2; */
+}
+.nav-bar .hamburger2 {
+    display: none;
+    top: 10px;
+    left: -45px;
+    position: relative;
+    animation-name: fade;
+    animation-duration: 1.25s;
+    /* z-index: 0; */
+}
+@keyframes fade {
+    from { opacity: 0;  }
+    to { opacity: 1;  }
+}
+.nav-bar .hamburger2 span{
+    display: block;
+    background: #fff;
+    width: 40px;
+    height: 10px;
+    margin: 2px;
+}
+.nav-bar .hamburger2 span#one {
+    position: absolute;
+    transform: rotate(-45deg);
+    background: #E44C65;
+}
+.nav-bar .hamburger2 span#three {
+    top: 0;
+    position: absolute;
+    transform: rotate(45deg);
+    background: #E44C65;
+}
+.nav-bar .action-menu:hover {
+    cursor: pointer;
+}
+.nav-bar .hamburger span{
+    display: block;
+    background: #fff;
+    width: 40px;
+    height: 10px;
+    margin: 2px;
+}
+
 div.hero-section {
     background: #304353;
     padding: 10rem;
+    /* z-index: -2; */
 }
 
 div.hero-content-heading {
@@ -100,7 +157,7 @@ div.background {
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
     padding: 15px 40px;
     width: 550px;
-    height: 220px;
+    height: auto;
     position: relative;
 }
 
@@ -156,6 +213,7 @@ div.snapshot-box {
     align-items: center;
     background: #f0f0f0;
     padding: 4rem 6rem;
+    position: relative;
 }
 
 div.snapshot-box-content {
@@ -344,4 +402,77 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+@media screen and (max-width: 735px){
+    div.snapshot-box-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    div.snapshot-box-content .box1 {
+        grid-column: span 2;
+        grid-row: 1;
+        position: relative;
+        
+        left: -20px;
+        /* margin-right: auto; */
+    }
+    div.snapshot-box-content .box1:nth-child(2){
+        margin-left: 60px;
+    }
+    div.snapshot-box-content .box3 {
+        grid-column: 2/4;
+        grid-row: 2;
+    }
+}
+
+@media screen and (max-width: 570px){
+
+    .logo {
+        width: 100%;
+        text-align: left;
+    }
+    .nav-bar .nav-links {
+        position: absolute;
+        display: flex;
+        border-bottom: 2px solid snow;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        left: 40%;
+        top: 85%;
+        display: none;
+        animation-name: fade;
+        animation-duration: 1.2s;
+    }
+    .nav-bar .nav-links * {
+        padding: 10px;
+        
+    }
+
+    .nav-bar .action-menu {
+        display: block;
+    }
+
+    div.snapshot-box-content {
+        display: flex;
+        flex-direction: column;
+   }
+   div.snapshot-box-content .box1:nth-child(2){
+    margin-left: auto;
+}
+div.snapshot-box-content .box3{
+    margin-left: auto;
+    position: relative;
+    left: -20px;
+}
+}
+
+@media screen and (min-width: 360px){
+    div.hero-section {
+        padding: 2em;
+        padding-top: 10em;
+    }
+ 
 }
