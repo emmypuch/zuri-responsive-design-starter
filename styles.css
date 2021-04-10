@@ -464,3 +464,12 @@ div.snapshot-box-content .box3{
     left: -20px;
 }
 }
+
+@media screen and(min-width: 360px){
+    .hero-content-heading h3{
+        text-align: left;
+    }
+    .hero-content-heading p{
+        text-align: center;
+    }
+}
