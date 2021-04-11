@@ -493,7 +493,7 @@ div.footer h6 {
     }
 
     div.hero-section {
-        padding: 13em 1em 7.8em 1em;
+        padding: 13.5em 1em 7.8em 1em;
     }
     
     div.hero-content-heading h3 {
@@ -502,9 +502,9 @@ div.footer h6 {
     
     div.hero-content-heading p {
         width: 90%;
-        font-size: 1.2rem;
-        padding: .7rem 2em 0 2em;
-        line-height: 2.5;
+        font-size: 1.3rem;
+        padding: .7rem .5em 0 .5em;
+        line-height: 3;
     }
     
     div.hero-content-btn a {
