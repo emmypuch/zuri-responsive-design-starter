@@ -396,7 +396,18 @@ div.footer h6 {
 
 
 
-/* ------- MEDIUM SCREEN SIZES ------- */
+/* ------- MEDIA QUERIES ------- */
+@media (min-width: 1103px) and (max-width: 1190px) {
+    div.hero-background-pos {
+        left: 67%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1102px) {
+    div.hero-background-pos {
+        left: 69%;
+    }
+}
 
 @media (min-width: 796px) and (max-width: 991px) {
     ul.nav-links  {
@@ -565,8 +576,6 @@ div.footer h6 {
 
 
 
-
-
 /* SMALL SCREEN SIZES */
 @media (min-width: 540px) and (max-width: 743px) {
     div.nav-bar {
@@ -725,10 +734,9 @@ div.footer h6 {
         display: block !important;
     }
     
-
     div.hero-section {
         text-align: center;
-        padding: 11.5em 1em 7.8em 1em;
+        padding: 8em 1em 7.8em 1em;
     }
     
     div.hero-content-heading h3 {
@@ -1013,7 +1021,7 @@ div.footer h6 {
 
 
 
-@media (max-width: 389px) {
+@media (min-width: 361px) and (max-width: 389px) {
     div.nav-bar {
         padding: 1rem 2rem;
     }
@@ -1174,6 +1182,170 @@ div.footer h6 {
         font-size: .8rem;
         background-color: transparent;
     }
-    
 }
 
+
+
+
+@media (max-width: 360px) {
+    div.nav-bar {
+        padding: 1rem 2rem;
+    }
+
+    ul.nav-links  {
+        display: none !important;
+    }
+    
+    .hamburger_menu {
+        display: block !important;
+    }
+
+    div.hero-section {
+        text-align: center;
+        padding: 6.5em 0 7.8em 0;
+    }
+    
+    div.hero-content-heading h3 {
+        font-size: 1.3rem;
+    }
+    
+    div.hero-content-heading p {
+        width: 100%;
+        font-size: .93rem;
+        padding: .7rem 1.3em 0 1.3em;
+        line-height: 2;
+    }
+    
+    div.hero-content-btn a {
+        font-size: .9rem;
+    }
+
+    div.hero-background-pos {
+        display: none;
+    }
+
+    div.hero-background {
+        padding: 8em 2em;
+    }
+
+    div.background {
+        height: auto;
+        max-height: 100%;
+        padding: 2em 1.2em;
+    }
+
+    div.background p {
+        padding: 0;
+        font-size: .8rem;
+        text-align: center;
+    }  
+
+    div.snapshot-team h2,
+    div.gallery-content h4,
+    div.footer-content h4 {
+        font-size: 1.2rem;
+    }
+    
+    div.snapshot-team p,
+    div.gallery-content p,
+    div.footer-content p {
+        font-size: .93rem;
+        width: 100%;
+        word-wrap: break-word;
+        letter-spacing: 1px;
+        padding: 0.8rem 2em 0 2em;
+        line-height: 2;
+    }
+
+    div.snapshot-box-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        min-width: 250px;
+    }
+
+    div.box1,
+    div.box3 {
+        display: block;
+        width: 100%;
+        margin-top: 5em;
+    }
+
+    div.box1:first-child {
+        margin-top: 0;
+    }
+
+    div.gallery-img {
+        align-items: center;
+    }
+
+    div.gallery-img > div {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.gallery-img > div:first-child {
+        margin-bottom: 3em;
+    }
+    
+    div.gallery-img div > div.img {
+        margin-top: 3em;
+    }
+
+    div.gallery-img div > div.img:first-child {
+        margin-top: 0;
+    }
+     
+    div.img > img {
+        width: 270px;
+        height: 200px;
+    }
+    
+    div.footer-input {
+        flex-direction: column;
+    }
+    
+    input[type="text"],
+    input[type="email"] {
+        font-size: .8rem;
+        margin: 0;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    input[type="email"] {
+        margin-top: 20px;
+    }
+    
+    div.footer-textarea textarea {
+        resize: none;
+        padding-left: 18px;
+        font-size: .8rem;
+        width: 85% !important;
+    }
+
+    div.footer h6 {
+        font-size: .82rem;
+    }
+
+    div.footer-btn {
+        width: 55%;
+        height: 35px;
+        border-radius: 5px;
+        margin: 0 auto;
+        padding-top: 0;
+        margin-top: 15px;
+        background: #E44C65;
+    }
+
+    div.footer-btn a {
+        padding: 0;
+        font-size: .8rem;
+        background-color: transparent;
+    }
+}
