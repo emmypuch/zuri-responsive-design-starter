@@ -99,8 +99,7 @@ div.background {
     background: #fff;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
     padding: 15px 40px;
-    width: 550px;
-    height: 220px;
+    width: 56%;
     position: relative;
 }
 
@@ -115,8 +114,11 @@ div.background h4 {
 div.background p {
     color: #A6A5AA;
     padding-left: 2rem;
+    padding-right: 1rem;
     font-size: 0.8rem;
+    margin-bottom: 1rem;
     letter-spacing: 2px;
+    margin-right: 1rem;
 }
 
 div.hero-background-pos {
@@ -344,4 +346,129 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+/* hamburger */
+.hamburger-container{
+    display: none;
+}
+.hamburger-menu{
+    cursor: pointer;
+    padding: 0.2rem 0.3rem;
+    background-color: #A6A5AA;
+    border: 1px solid #88949B;
+}
+/* Reponsive */
+@media (max-width: 1070px){
+    div.background{
+        width: 90%;
+    }
+    div.hero-background-pos{
+        left: 77%;
+        width: 125px;
+        height: 125px;
+    }
+}
+@media (max-width: 991px){
+    div.background{
+        width: 90%;
+    }
+    div.hero-background-pos{
+        left: 74%;
+    }
+    div.snapshot-box{
+        padding: 4rem 1.3rem;
+    }
+    div.snapshot-box-content{
+        overflow-x: scroll;
+    }
+}
+@media (max-width: 889px){
+    div.background{
+        width: 90%;
+    }
+    div.hero-background-pos{
+        left: 70%;
+    }
+}
+@media (max-width: 768px){
+    .nav-bar-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+    }
+    div.nav-bar{
+        display: block;
+    }
+    ul.nav-links{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .hamburger-container{
+        display: block;
+    }
+    div.background{
+        width: 90%;
+    }
+    div.hero-background{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    div.hero-background-pos{
+        left: 77%;
+    }
+    div.hero-section{
+        padding: 10rem 2rem;
+    }
+    input[type="text"], 
+    input[type="email"]{
+        width: 35%;
+    }
+    textarea{
+        width: 70%;
+    }
+    div.nav-bar{
+        padding: 1rem;
+    }
+    .links{
+        height: 0;
+        overflow: hidden;
+    }
+    .show-links {
+        height: 10rem;
+    }
+}
+@media (max-width: 600px){
+    div.background p{
+        margin-right: 0;
+        padding-right: 0;
+    }
+    div.hero-background-pos{
+        display: none;
+        opacity: 0;
+    }
+    div.hero-background{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    div.background{
+        padding: 1rem;
+        width: 100%;
+    }
+    div.hero-background-pos{
+        left: 73%;
+    }
+}
+@media (max-width: 370px){
+    div.footer-input{
+        flex-direction: column;
+    }
+    input[type="text"], 
+    input[type="email"]{
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
 }
