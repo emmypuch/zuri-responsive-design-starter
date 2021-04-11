@@ -396,13 +396,13 @@ div.footer h6 {
 /* ------- MEDIA QUERIES ------- */
 @media (min-width: 1103px) and (max-width: 1190px) {
     div.hero-background-pos {
-        left: 69%;
+        left: 68.5%;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1102px) {
     div.hero-background-pos {
-        left: 70%;
+        left: 69%;
     }
 }
 
