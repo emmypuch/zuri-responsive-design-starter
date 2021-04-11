@@ -229,7 +229,6 @@ div.circle {
     border-radius: 50%;
     background: #bcc3c7;
     margin-top: 2rem;
-    
 }
 
 div.box1 h5 {
@@ -394,18 +393,16 @@ div.footer h6 {
 
 
 
-
-
 /* ------- MEDIA QUERIES ------- */
 @media (min-width: 1103px) and (max-width: 1190px) {
     div.hero-background-pos {
-        left: 67%;
+        left: 69%;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1102px) {
     div.hero-background-pos {
-        left: 69%;
+        left: 70%;
     }
 }
 
