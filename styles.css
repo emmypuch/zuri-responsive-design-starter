@@ -399,7 +399,7 @@ div.footer h6 {
 @media screen and (max-width: 875px ){
     div.hero-background-pos{
         height: 130px;
-        width: 130px;
+        width: fit-content;
         left: 65%;
         
     }
@@ -416,12 +416,13 @@ div.footer h6 {
 
     div.background {
         height: 22em;
+        width: fit-content;
     }
 }
 
 @media screen and (max-width: 720px ){
     div.background{
-        width: 90%;
+        width: fit-content;
     }
     div.hero-background-pos{
         left: 70%;
@@ -430,18 +431,61 @@ div.footer h6 {
 
 @media screen and (max-width: 650px ){
     ul.nav-links{
-        display: none;
         
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        padding-bottom: 15px;
+        margin-top: 2.5em;
+        text-align: center;
+        
+       /* visibility: hidden;     */
+        
+    }
+     .nav-links.active{
+        display: flex;
+    }
+
+    ul.nav-links li a{
+    
+        display: block;
+        margin-right: 0;
+        padding-top: 5px;
+        font-size: large;
+        
+    }
+
+    ul.nav-links li a.d1:hover{
+        box-shadow: 0px 0px 3.5px  whitesmoke;
+        box-shadow: 0px 1.5px 2px rgb(49, 46, 46);
+
+    }
+    ul.nav-links li a.d2:hover{
+        box-shadow: 0px 0px 2.5px  whitesmoke;
+        box-shadow: 0px 1.5px 2px rgb(49, 46, 46);
+    }
+    ul.nav-links li a.d3:hover{
+        box-shadow: 0px 0px 2.5px  whitesmoke;
+        box-shadow: 0px 1.5px 2px rgb(49, 46, 46);
+    }
+    ul.nav-links li a.d4:hover{
+        box-shadow: 0px 0px 2.5px  whitesmoke;
+        box-shadow: 0px 1.5px 2px rgb(49, 46, 46);
     }
     div.nav-bar .nav-btn div{
         visibility: visible;
     }
+
+   div.hero-content-heading{
+       margin-top: 1em;
+   }
 }
 
 
 @media screen and (max-width: 590px ){
     div.background{
-        width: 180%;
+        width: fit-content;
         height: 25em;
     }
     div.hero-background-pos{
@@ -459,6 +503,9 @@ div.footer h6 {
         padding: 40px 0px 0px 0px;
         margin-left: 0px;
         
+    }
+    div.hero-content-heading{
+        margin-top: 4em;
     }
   
     div.hero-section{
@@ -514,7 +561,9 @@ div.footer h6 {
      textarea{
          width: 80%;
      }
-  
+     div.hero-content-heading{
+        margin-top: 5em;
+    }
 }
 
  @media screen and ( max-width: 390px){
@@ -531,4 +580,7 @@ div.footer h6 {
      textarea{
          width: 100%;
      }
+     div.hero-content-heading{
+        margin-top: 6.5em;
+    }
  } 
