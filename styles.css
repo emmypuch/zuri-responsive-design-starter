@@ -345,3 +345,118 @@ div.footer h6 {
     font-size: 1rem;
     padding-top: 6rem;
 }
+
+
+/* ------------ @ Media Queries (Responsiveness) ------------------------------- */
+@media screen and (max-width: 768px){
+    div.nav-bar{
+        justify-content: space-between;
+       display:flex;
+       width:100vw;
+       padding:14px;
+    } 
+    div.logo{
+       font-size: 1.3rem;
+    }
+    ul.nav-links{
+       flex-direction: column;
+    }
+    ul li{
+       margin: 0;
+       font-size: 1rem;
+    }
+    ul li a{
+       display: block
+    }
+    div.hero-section{
+        padding: 5rem 2rem;
+    }
+    div.hero-content h3{
+        text-align: center;
+        font-size: 1.5rem;
+        text-transform: none;
+    }
+    div.hero-content-heading p{
+        font-size: 0.6rem
+
+    }
+    div.hero-background{
+        background: #f0f0f0;
+        padding: 10rem;
+        display: flex;
+
+    }
+    div.background h4{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+     div.background p{
+        padding-left: 0.5rem;
+        font-size: 0.62rem
+     }
+      div.hero-background-pos{
+        display:none;
+      }
+      div.snapshot-team h2{
+        font-size: 1.2rem;
+      }
+      div.snapshot-team p{
+        font-size: 0.8rem;
+      }
+      div.snapshot-box{
+        padding: 2rem 0rem;
+      }
+      div.snapshot-box-content{
+        display: flex;
+        flex-direction: column;
+      }
+      div.box1{
+        width: 300px;
+        height: 230px;
+      }
+      div.box3{
+        width: 300px;
+        height: 230px;
+      }
+      div.gallery-section{
+        padding: 2rem;
+      }
+      div.img img{
+        width: 300px;
+        height: 180px;
+      }
+      div.gallery-content h4{
+        font-size: 1.2rem;
+      }
+      div.gallery-content p{
+        font-size: 0.8rem;
+      }
+      /*for footer*/
+       input[type="email"] {
+        width: 100%;
+        padding: 10px 20px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 10px 20px;
+      }
+       textarea{
+        width: 100%;
+        height: 150px;
+      }
+       div.footer h6{
+        font-size: 0.8rem;
+        padding-top: 6rem;
+      }
+      div.footer{
+        padding: 2rem;
+      }
+      div.footer-content h4{
+        font-size: 1.2rem;
+      }
+      div.footer-content p{
+        font-size: 0.8rem;
+      }
+
+}
+
