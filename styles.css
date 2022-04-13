@@ -7,9 +7,16 @@
     font-family: 'Rubik', sans-serif;
 }
 
+body {
+    box-sizing: border-box;
+    width: 100vw !important;
+    overflow-x: hidden !important;
+}
+
 div.nav-bar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 6rem;
     width: 100vw;
     background: #304353;
@@ -22,6 +29,7 @@ div.logo {
 
 ul.nav-links {
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -44,12 +52,26 @@ ul li a:hover {
     padding: 0.5rem;
 }
 
+.hamburger_menu {
+    color: #fff;
+    margin-top: 6px;
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger_menu:hover {
+    border-radius: 50%;
+}
+
+
 div.hero-section {
+    height: 91vh;
     background: #304353;
-    padding: 10rem;
+    padding: 10rem 4rem;
 }
 
 div.hero-content-heading {
+    line-height: 1.9;
     text-align: center;
 }
 
@@ -62,10 +84,12 @@ div.hero-content-heading h3 {
 }
 
 div.hero-content-heading p {
+    width: 95%;
+    margin: 0 auto;
     text-align: center;
-    padding-top: 0.7rem;
+    padding: .7rem 5em 0 5em;
     color: #88949B;
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: 2px;
     font-weight: 300;
 }
@@ -81,7 +105,7 @@ div.hero-content-btn a {
     background: #E44C65;
     text-decoration: none;
     color: #bcc3c7;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     padding: 10px 30px;
     border-radius: 3px;
     letter-spacing: 2px;
@@ -98,14 +122,18 @@ div.hero-background {
 div.background {
     background: #fff;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
-    padding: 15px 40px;
+    padding: 0 30px;
     width: 550px;
     height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
 div.background h4 {
-    padding: 2rem;
+    padding: 1rem 2rem;
     color: #555657;
     font-size: 1rem;
     letter-spacing: 2px;
@@ -114,9 +142,10 @@ div.background h4 {
 
 div.background p {
     color: #A6A5AA;
-    padding-left: 2rem;
     font-size: 0.8rem;
+    padding: 0 4em;
     letter-spacing: 2px;
+    line-height: 1.7;
 }
 
 div.hero-background-pos {
@@ -146,8 +175,10 @@ div.snapshot-team h2 {
 div.snapshot-team p {
     color: #A6A5AA;
     font-size: 1rem;
+    word-wrap: break-word;
     letter-spacing: 2px;
-    padding-top: 0.8rem;
+    padding: 0.8rem 2em 0 2em;
+    line-height: 2;
 }
 
 div.snapshot-box {
@@ -198,7 +229,6 @@ div.circle {
     border-radius: 50%;
     background: #bcc3c7;
     margin-top: 2rem;
-    
 }
 
 div.box1 h5 {
@@ -301,7 +331,12 @@ input[type="email"] {
     border-radius: 2px;
 }
 
+input[type="email"] {
+    margin-right: 0;
+}
+
 ::placeholder {
+    font-size: .92rem;
     color: #A6A5AA;
 }
 
@@ -316,6 +351,8 @@ textarea {
     width: 51%;
     height: 150px;
     padding: 0.5rem;
+    resize: none;
+    padding-left: 18px;
     outline: none;
     border: 1px solid #bcc3c7;
     background: transparent;
@@ -344,4 +381,968 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------- MEDIA QUERIES ------- */
+@media (min-width: 1103px) and (max-width: 1190px) {
+    div.hero-background-pos {
+        left: 68.5%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1102px) {
+    div.hero-background-pos {
+        left: 69%;
+    }
+}
+
+@media (min-width: 796px) and (max-width: 991px) {
+    ul.nav-links  {
+        display: none;
+    }
+    
+    .hamburger_menu {
+        display: block;
+    }
+
+    div.hero-section {
+        padding: 9rem 4rem;
+    }
+    
+    div.hero-content-heading h3 {
+        font-size: 1.9rem;
+    }
+    
+    div.hero-content-heading p {
+        width: 90%;
+        padding: .7rem 2em 0 2em;
+        line-height: 2;
+    }
+    
+    div.hero-content-btn a {
+        font-size: 1rem;
+    }
+
+    div.hero-background-pos {
+        display: none;
+    }
+
+    div.background {
+        height: auto;
+        max-height: 242px;
+        padding: 2em 1em;
+    }
+
+    div.background p {
+        font-size: .9rem;
+        padding: 0 1em;
+    }
+
+    div.snapshot-box-content {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.box1 {
+        margin-right: 2em;
+    }
+
+    div.box1,
+    div.box3 {
+        width: 15em;
+        height: 14em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    div.circle {
+        width: 110px;
+        height: 110px;
+        margin-top: 0;
+    }
+
+    div.box1 h5,
+    div.box3 h5 {
+        font-size: 1.15rem;
+    }
+
+    div.footer-textarea textarea {
+        resize: none;
+        padding-left: 18px;
+    }
+}
+
+
+
+@media (min-width: 744px) and (max-width: 795px) {
+    div.nav-bar {
+        padding: 1rem 4rem;
+    }
+
+    ul.nav-links  {
+        display: none;
+    }
+    
+    .hamburger_menu {
+        display: block;
+    }
+
+    div.hero-section {
+        padding: 13.5em 1em 7.8em 1em;
+    }
+    
+    div.hero-content-heading h3 {
+        font-size: 1.9rem;
+    }
+    
+    div.hero-content-heading p {
+        width: 90%;
+        font-size: 1.3rem;
+        padding: .7rem .5em 0 .5em;
+        line-height: 3;
+    }
+    
+    div.hero-content-btn a {
+        font-size: 1rem;
+    }
+
+    div.hero-background-pos {
+        display: none;
+    }
+
+    div.background {
+        height: auto;
+        max-height: 242px;
+        padding: 2em 1em;
+    }
+
+    div.background p {
+        font-size: .9rem;
+        padding: 0 1em;
+    }
+
+    div.snapshot-box-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.box1,
+    div.box3 {
+        width: 320px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    div.box1 {
+        margin: 0 0 4em 0;
+    }
+
+    div.circle {
+        width: 100px;
+        height: 100px;
+        margin-top: 0;
+    }
+
+    div.box1 h5,
+    div.box3 h5 {
+        font-size: 1.1rem;
+    }
+
+    div.footer-textarea textarea {
+        resize: none;
+        padding-left: 18px;
+    }
+}
+
+
+
+/* SMALL SCREEN SIZES */
+@media (min-width: 540px) and (max-width: 743px) {
+    div.nav-bar {
+        padding: 1rem 3rem;
+    }
+
+    ul.nav-links  {
+        display: none !important;
+    }
+    
+    .hamburger_menu {
+        display: block !important;
+    }
+
+    div.hero-section {
+        padding: 9em 0 7.8em 0;
+    }
+    
+    div.hero-content-heading h3 {
+        font-size: 1.75rem;
+    }
+    
+    div.hero-content-heading p {
+        width: 100%;
+        font-size: 1.02rem;
+        padding: .7rem 2em 0 2em;
+        line-height: 2.5;
+    }
+    
+    div.hero-content-btn a {
+        font-size: 1rem;
+    }
+
+    div.hero-background-pos {
+        display: none;
+    }
+
+    div.hero-background {
+        padding: 8em 2em;
+    }
+
+    div.background {
+        height: auto;
+        max-height: 242px;
+        padding: 2em 1em;
+    }
+
+    div.background p {
+        font-size: .9rem;
+        padding: 0 1em;
+    }  
+
+    div.snapshot-team h2,
+    div.gallery-content h4,
+    div.footer-content h4 {
+        font-size: 1.4rem;
+    }
+    
+    div.snapshot-team p,
+    div.gallery-content p,
+    div.footer-content p {
+        font-size: 1.02rem;
+        word-wrap: break-word;
+        letter-spacing: 1px;
+        padding: 0.8rem 2em 0 2em;
+        line-height: 2;
+    }
+
+    div.snapshot-box-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        min-width: 250px;
+    }
+
+    div.box1,
+    div.box3 {
+        display: block;
+        width: 100%;
+        margin-top: 5em;
+    }
+
+    div.box1:first-child {
+        margin-top: 0;
+    }
+
+    div.gallery-img {
+        align-items: center;
+    }
+
+    div.gallery-img > div {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.gallery-img > div:first-child {
+        margin-bottom: 3em;
+    }
+    
+    div.gallery-img div > div.img {
+        margin-top: 3em;
+    }
+
+    div.gallery-img div > div.img:first-child {
+        margin-top: 0;
+    }
+     
+    div.img > img {
+        width: 270px;
+        height: 200px;
+    }
+    
+    div.footer-input {
+        flex-direction: column;
+    }
+    
+    input[type="text"],
+    input[type="email"] {
+        margin: 0;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    input[type="email"] {
+        margin-top: 20px;
+    }  
+
+    div.footer-textarea textarea {
+        resize: none;
+        padding-left: 18px;
+        width: 70% !important;
+    }
+
+    div.footer h6 {
+        font-size: .9rem;
+    }
+}
+
+
+
+@media (min-width: 510px) and (max-width: 539px) {
+    div.nav-bar {
+        padding: 1rem 2rem;
+    }
+
+    ul.nav-links  {
+        display: none !important;
+    }
+    
+    .hamburger_menu {
+        display: block !important;
+    }
+    
+    div.hero-section {
+        text-align: center;
+        padding: 8em 1em 7.8em 1em;
+    }
+    
+    div.hero-content-heading h3 {
+        font-size: 1.55rem;
+    }
+    
+    div.hero-content-heading p {
+        width: 100%;
+        font-size: 1rem;
+        padding: .7rem 2em 0 2em;
+        line-height: 2.5;
+    }
+    
+    div.hero-content-btn a {
+        font-size: 1rem;
+    }
+
+    div.hero-background-pos {
+        display: none;
+    }
+
+    div.hero-background {
+        padding: 8em 2em;
+    }
+
+    div.background {
+        height: auto;
+        max-height: 242px;
+        padding: 2em 1em;
+    }
+
+    div.background p {
+        font-size: .9rem;
+        padding: 0 1em;
+    }  
+
+    div.snapshot-team h2,
+    div.gallery-content h4,
+    div.footer-content h4 {
+        font-size: 1.4rem;
+    }
+    
+    div.snapshot-team p,
+    div.gallery-content p,
+    div.footer-content p {
+        font-size: 1.1rem;
+        word-wrap: break-word;
+        letter-spacing: 1px;
+        padding: 0.8rem 2em 0 2em;
+        line-height: 2;
+    }
+
+    div.snapshot-box-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        min-width: 250px;
+    }
+
+    div.box1,
+    div.box3 {
+        display: block;
+        width: 100%;
+        margin-top: 5em;
+    }
+
+    div.box1:first-child {
+        margin-top: 0;
+    }
+
+    div.gallery-img {
+        align-items: center;
+    }
+
+    div.gallery-img > div {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.gallery-img > div:first-child {
+        margin-bottom: 3em;
+    }
+    
+    div.gallery-img div > div.img {
+        margin-top: 3em;
+    }
+
+    div.gallery-img div > div.img:first-child {
+        margin-top: 0;
+    }
+     
+    div.img > img {
+        width: 270px;
+        height: 200px;
+    }
+    
+    div.footer-input {
+        flex-direction: column;
+    }
+    
+    input[type="text"],
+    input[type="email"] {
+        margin: 0;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    input[type="email"] {
+        margin-top: 20px;
+    }
+    
+    div.footer-textarea textarea {
+        resize: none;
+        padding-left: 18px;
+        width: 85% !important;
+    }
+
+    div.footer h6 {
+        font-size: .9rem;
+    }
+}
+
+
+
+@media (min-width: 390px) and (max-width: 509px) {
+    div.nav-bar {
+        padding: 1rem 2rem;
+    }
+
+    ul.nav-links  {
+        display: none !important;
+    }
+    
+    .hamburger_menu {
+        display: block !important;
+    }
+
+    div.hero-section {
+        text-align: center;
+        padding: 8.5em 0 7.8em 0;
+    }
+    
+    div.hero-content-heading h3 {
+        font-size: 1.45rem;
+    }
+    
+    div.hero-content-heading p {
+        width: 100%;
+        font-size: 1rem;
+        padding: .7rem 2em 0 2em;
+        line-height: 2.5;
+    }
+    
+    div.hero-content-btn a {
+        font-size: 1rem;
+    }
+
+    .hero-content-btn {
+        height: 40px;
+    }
+
+    div.hero-background-pos {
+        display: none;
+    }
+
+    div.hero-background {
+        padding: 8em 2em;
+    }
+
+    div.background {
+        height: auto;
+        text-align: center;
+        max-height: 100%;
+        padding: 2em 1em;
+    }
+
+    div.background p {
+        font-size: .82rem;
+        padding: 0 1em;
+    }  
+
+    div.snapshot-team h2,
+    div.gallery-content h4,
+    div.footer-content h4 {
+        font-size: 1.32rem;
+    }
+    
+    div.snapshot-team p,
+    div.gallery-content p,
+    div.footer-content p {
+        font-size: 1rem;
+        width: 100%;
+        word-wrap: break-word;
+        letter-spacing: 1px;
+        padding: 0.8rem 2em 0 2em;
+        line-height: 2;
+    }
+
+    div.snapshot-box-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        min-width: 250px;
+    }
+
+    div.box1,
+    div.box3 {
+        display: block;
+        width: 100%;
+        margin-top: 5em;
+    }
+
+    div.box1:first-child {
+        margin-top: 0;
+    }
+
+    div.gallery-img {
+        align-items: center;
+    }
+
+    div.gallery-img > div {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.gallery-img > div:first-child {
+        margin-bottom: 3em;
+    }
+    
+    div.gallery-img div > div.img {
+        margin-top: 3em;
+    }
+
+    div.gallery-img div > div.img:first-child {
+        margin-top: 0;
+    }
+     
+    div.img > img {
+        width: 270px;
+        height: 200px;
+    }
+    
+    div.footer-input {
+        flex-direction: column;
+    }
+    
+    input[type="text"],
+    input[type="email"] {
+        margin: 0;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    input[type="email"] {
+        margin-top: 20px;
+    }
+    
+    div.footer-textarea textarea {
+        resize: none;
+        padding-left: 18px;
+        width: 85% !important;
+    }
+
+    div.footer h6 {
+        font-size: .82rem;
+    }
+
+    div.footer-btn a {
+        padding: 10px 35px;
+    }
+}
+
+
+
+@media (min-width: 361px) and (max-width: 389px) {
+    div.nav-bar {
+        padding: 1rem 2rem;
+    }
+
+    ul.nav-links  {
+        display: none !important;
+    }
+    
+    .hamburger_menu {
+        display: block !important;
+    }
+
+    div.hero-section {
+        text-align: center;
+        padding: 8.8em 0 7.8em 0;
+    }
+    
+    div.hero-content-heading h3 {
+        font-size: 1.3rem;
+    }
+    
+    div.hero-content-heading p {
+        width: 100%;
+        font-size: .93rem;
+        padding: .7rem 1.3em 0 1.3em;
+        line-height: 2.5;
+    }
+    
+    div.hero-content-btn a {
+        font-size: .9rem;
+    }
+
+    div.hero-background-pos {
+        display: none;
+    }
+
+    div.hero-background {
+        padding: 8em 2em;
+    }
+
+    div.background {
+        height: auto;
+        max-height: 100%;
+        padding: 2em 1.2em;
+    }
+
+    div.background p {
+        padding: 0;
+        font-size: .8rem;
+        text-align: center;
+    }  
+
+    div.snapshot-team h2,
+    div.gallery-content h4,
+    div.footer-content h4 {
+        font-size: 1.2rem;
+    }
+    
+    div.snapshot-team p,
+    div.gallery-content p,
+    div.footer-content p {
+        font-size: .93rem;
+        width: 100%;
+        word-wrap: break-word;
+        letter-spacing: 1px;
+        padding: 0.8rem 2em 0 2em;
+        line-height: 2;
+    }
+
+    div.snapshot-box-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        min-width: 250px;
+    }
+
+    div.box1,
+    div.box3 {
+        display: block;
+        width: 100%;
+        margin-top: 5em;
+    }
+
+    div.box1:first-child {
+        margin-top: 0;
+    }
+
+    div.gallery-img {
+        align-items: center;
+    }
+
+    div.gallery-img > div {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.gallery-img > div:first-child {
+        margin-bottom: 3em;
+    }
+    
+    div.gallery-img div > div.img {
+        margin-top: 3em;
+    }
+
+    div.gallery-img div > div.img:first-child {
+        margin-top: 0;
+    }
+     
+    div.img > img {
+        width: 270px;
+        height: 200px;
+    }
+    
+    div.footer-input {
+        flex-direction: column;
+    }
+    
+    input[type="text"],
+    input[type="email"] {
+        font-size: .8rem;
+        margin: 0;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    input[type="email"] {
+        margin-top: 20px;
+    }
+    
+    div.footer-textarea textarea {
+        resize: none;
+        padding-left: 18px;
+        font-size: .8rem;
+        width: 85% !important;
+    }
+
+    div.footer h6 {
+        font-size: .82rem;
+    }
+
+    div.footer-btn {
+        width: 55%;
+        height: 35px;
+        border-radius: 5px;
+        margin: 0 auto;
+        padding-top: 0;
+        margin-top: 15px;
+        background: #E44C65;
+    }
+
+    div.footer-btn a {
+        padding: 0;
+        font-size: .8rem;
+        background-color: transparent;
+    }
+}
+
+
+
+
+@media (max-width: 360px) {
+    div.nav-bar {
+        padding: 1rem 2rem;
+    }
+
+    ul.nav-links  {
+        display: none !important;
+    }
+    
+    .hamburger_menu {
+        display: block !important;
+    }
+
+    div.hero-section {
+        text-align: center;
+        padding: 6.5em 0 7.8em 0;
+    }
+    
+    div.hero-content-heading h3 {
+        font-size: 1.3rem;
+    }
+    
+    div.hero-content-heading p {
+        width: 100%;
+        font-size: .93rem;
+        padding: .7rem 1.3em 0 1.3em;
+        line-height: 2;
+    }
+    
+    div.hero-content-btn a {
+        font-size: .9rem;
+    }
+
+    div.hero-background-pos {
+        display: none;
+    }
+
+    div.hero-background {
+        padding: 8em 2em;
+    }
+
+    div.background {
+        height: auto;
+        max-height: 100%;
+        padding: 2em 1.2em;
+    }
+
+    div.background p {
+        padding: 0;
+        font-size: .8rem;
+        text-align: center;
+    }  
+
+    div.snapshot-team h2,
+    div.gallery-content h4,
+    div.footer-content h4 {
+        font-size: 1.2rem;
+    }
+    
+    div.snapshot-team p,
+    div.gallery-content p,
+    div.footer-content p {
+        font-size: .93rem;
+        width: 100%;
+        word-wrap: break-word;
+        letter-spacing: 1px;
+        padding: 0.8rem 2em 0 2em;
+        line-height: 2;
+    }
+
+    div.snapshot-box-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        min-width: 250px;
+    }
+
+    div.box1,
+    div.box3 {
+        display: block;
+        width: 100%;
+        margin-top: 5em;
+    }
+
+    div.box1:first-child {
+        margin-top: 0;
+    }
+
+    div.gallery-img {
+        align-items: center;
+    }
+
+    div.gallery-img > div {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.gallery-img > div:first-child {
+        margin-bottom: 3em;
+    }
+    
+    div.gallery-img div > div.img {
+        margin-top: 3em;
+    }
+
+    div.gallery-img div > div.img:first-child {
+        margin-top: 0;
+    }
+     
+    div.img > img {
+        width: 270px;
+        height: 200px;
+    }
+    
+    div.footer-input {
+        flex-direction: column;
+    }
+    
+    input[type="text"],
+    input[type="email"] {
+        font-size: .8rem;
+        margin: 0;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    input[type="email"] {
+        margin-top: 20px;
+    }
+    
+    div.footer-textarea textarea {
+        resize: none;
+        padding-left: 18px;
+        font-size: .8rem;
+        width: 85% !important;
+    }
+
+    div.footer h6 {
+        font-size: .82rem;
+    }
+
+    div.footer-btn {
+        width: 55%;
+        height: 35px;
+        border-radius: 5px;
+        margin: 0 auto;
+        padding-top: 0;
+        margin-top: 15px;
+        background: #E44C65;
+    }
+
+    div.footer-btn a {
+        padding: 0;
+        font-size: .8rem;
+        background-color: transparent;
+    }
 }
